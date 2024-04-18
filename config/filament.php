@@ -85,12 +85,4 @@ return [
 
     'livewire_loading_delay' => 'default',
 
-    'widgets' => [
-        // ...
-        'default' => [
-            'account' => true, // Disables the account widget.
-            'info' => true, // Disables the info widget.
-        ],
-    ],
-
 ];

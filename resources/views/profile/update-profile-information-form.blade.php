@@ -149,13 +149,13 @@
             <x-input-error for="agency" class="mt-2" />
         </div>
 
-        <!-- Pic -->
-        <div class="col-span-6 sm:col-span-4">
+        <!-- Pic --> {{-- Tidak digunakan form pic krn sudah menampilkan ProfilePhoto Jetstream --}}
+{{--         <div class="col-span-6 sm:col-span-4">
             <x-label for="pic" value="{{ __('Pic') }}" />
             <x-input id="pic" type="text" class="mt-1 block w-full" wire:model="state.pic" required
                 autocomplete="pic" />
             <x-input-error for="pic" class="mt-2" />
-        </div>
+        </div> --}}
 
     </x-slot>
 

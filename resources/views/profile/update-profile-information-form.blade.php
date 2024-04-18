@@ -103,19 +103,42 @@
         </div>
 
         <!-- Gender -->
-        <div class="col-span-6 sm:col-span-4">
+        {{--         <div class="col-span-6 sm:col-span-4">
             <x-label for="gender" value="{{ __('Gender') }}" />
             <x-input id="gender" type="text" class="mt-1 block w-full" wire:model="state.gender" required
                 autocomplete="gender" />
             <x-input-error for="gender" class="mt-2" />
+        </div> --}}
+
+        <div class="col-span-6 sm:col-span-4">
+            <x-label for="gender" class="mt-1 block w-full">Gender</x-label>
+            <select name="gender" value="{{ __('Gender') }}" wire:model="state.gender" required
+                autocomplete="gender">
+                <option value="Male" selected>Male</option>
+                <option value="Female">Female</option>
+            </select>
         </div>
 
         <!-- Position -->
-        <div class="col-span-6 sm:col-span-4">
+        {{--         <div class="col-span-6 sm:col-span-4">
             <x-label for="position" value="{{ __('Position') }}" />
             <x-input id="position" type="text" class="mt-1 block w-full" wire:model="state.position" required
                 autocomplete="position" />
             <x-input-error for="position" class="mt-2" />
+        </div> --}}
+
+        <div class="col-span-6 sm:col-span-4">
+            <x-label for="position" class="mt-1 block w-full">Position</x-label>
+            <select name="position" value="{{ __('Position') }}" wire:model="state.position" required
+                autocomplete="position">
+                <option value="Registrar" selected>Registrar</option>
+                <option value="Kurator">Kurator</option>
+                <option value="Konservator">Konservator</option>
+                <option value="Edukator">Edukator</option>
+                <option value="Penata Pameran">Penata Pameran</option>
+                <option value="Humas">Humas</option>
+                <option value="Pemasaran">Pemasaran</option>
+            </select>
         </div>
 
         <!-- Agency -->

@@ -25,8 +25,8 @@ class UpdateUserProfileInformation implements UpdatesUserProfileInformation
             'gender' => ['required', 'string', 'max:255'],
             'position' => ['required', 'string', 'max:255'],
             'agency' => ['required', 'string', 'max:255'],
-            'pic' => ['required', 'string', 'max:255'],
-            'photo' => ['nullable', 'mimes:jpg,jpeg,png', 'max:1024'],
+            'comment' => ['required', 'string', 'max:255'],
+            'photo' => ['nullable', 'mimes:jpg,jpeg,png', 'max:4096'],
         ])->validateWithBag('updateProfileInformation');
 
         if (isset($input['photo'])) {
@@ -47,8 +47,7 @@ class UpdateUserProfileInformation implements UpdatesUserProfileInformation
                 'gender' => $input['gender'],
                 'position' => $input['position'],
                 'agency' => $input['agency'],
-                'pic' => $input['pic'],
-
+                'comment' => $input['comment'],
             ])->save();
         }
     }

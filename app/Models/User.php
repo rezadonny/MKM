@@ -37,7 +37,7 @@ class User extends Authenticatable
         'gender',
         'position',
         'agency',
-        'pic',
+        'comment',
         'password',
     ];
 

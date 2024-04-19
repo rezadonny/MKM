@@ -31,5 +31,6 @@ class Museum extends Model
         'foto_umum',
         'logo',
         'keterangan',
+        'slug',
     ];
 }

@@ -24,8 +24,9 @@ class AdminPanelProvider extends PanelProvider
     {
         return $panel
             ->default()
+            ->sidebarCollapsibleOnDesktop(true) /* Sidebar admin panel bisa hide */
             ->id('admin')
-            ->path('admin')
+            ->path('admin') /* Alamat halaman landing admin panel */
             ->login()
             ->colors([
                 'primary' => Color::Amber,

@@ -34,6 +34,7 @@ return new class extends Migration
             $table->string('foto_umum')->nullable();
             $table->string('logo')->nullable();
             $table->longText('keterangan')->nullable();
+            $table->string('slug')->unique();
             $table->timestamps();
         });
     }
